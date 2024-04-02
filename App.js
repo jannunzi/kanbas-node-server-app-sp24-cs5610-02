@@ -8,6 +8,8 @@ import CourseRoutes from "./Courses/routes.js";
 import ModuleRoutes from "./Kanbas/modules/routes.js";
 import SecurityController from "./SecurityController.js";
 import UserRoutes from "./Users/routes.js";
+import LikesRoutes from "./Napster/likes/routes.js";
+
 import mongoose from "mongoose";
 
 mongoose.connect("mongodb://localhost:27017/kanbas-sp24-mon");
@@ -32,5 +34,6 @@ CourseRoutes(app);
 ModuleRoutes(app);
 SecurityController(app);
 UserRoutes(app);
+LikesRoutes(app);
 
 app.listen(4000);

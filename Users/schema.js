@@ -12,6 +12,7 @@ const userSchema = mongoose.Schema(
       enum: ["USER", "ADMIN", "STAFF", "FACULTY", "STUDENT"],
       default: "USER",
     },
+    likesAlbums: [{ ref: "Albums", type: mongoose.Schema.Types.ObjectId }],
   },
   { collection: "users" }
 );
