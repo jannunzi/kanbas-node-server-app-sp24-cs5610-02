@@ -23,7 +23,7 @@ mongoose.connect(
 const app = express();
 app.use(
   cors({
-    origin: "http://localhost:3000",
+    origin: "https://openai--brilliant-entremet-94d513.netlify.app/",
     credentials: true,
   })
 );
@@ -38,7 +38,6 @@ app.use(
       sameSite: "none",
       secure: true,
       domain: "kanbas-node-server-app-sp24-cs5610-02-l55v.onrender.com",
-      // domain: ".onrender.com",
     },
   })
 );
