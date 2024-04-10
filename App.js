@@ -23,7 +23,7 @@ mongoose.connect(
 const app = express();
 app.use(
   cors({
-    origin: "https://openai--brilliant-entremet-94d513.netlify.app/",
+    origin: "https://openai--brilliant-entremet-94d513.netlify.app",
     credentials: true,
   })
 );
