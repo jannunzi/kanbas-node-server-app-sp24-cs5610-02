@@ -1,5 +1,5 @@
 import userModel from "../../Users/model.js";
-import albumModel from "../Albums/model.js";
+import albumModel from "../albums/model.js";
 
 export const userLikesAlbum = async (userId, album) => {
   const user = await userModel.findById(userId);
