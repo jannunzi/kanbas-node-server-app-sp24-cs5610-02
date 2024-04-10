@@ -37,7 +37,7 @@ app.use(
     cookie: {
       sameSite: "none",
       secure: true,
-      domain: "localhost",
+      domain: "localhost:3000",
     },
   })
 );
