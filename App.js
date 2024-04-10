@@ -9,10 +9,16 @@ import ModuleRoutes from "./Kanbas/modules/routes.js";
 import SecurityController from "./SecurityController.js";
 import UserRoutes from "./Users/routes.js";
 import LikesRoutes from "./Napster/likes/routes.js";
+import ChatCompletionRoutes from "./openai/chat/routes.js";
+// import ImageGenerationRoutes from "./openai/images/routes.js";
+// import VisionRoutes from "./openai/vision/routes.js";
 
 import mongoose from "mongoose";
 
-mongoose.connect("mongodb://localhost:27017/kanbas-sp24-mon");
+// mongoose.connect("mongodb://localhost:27017/kanbas-sp24-mon");
+mongoose.connect(
+  "mongodb+srv://jannunzi:KV7uCTUWcD71COUh@cluster0.qzab2w4.mongodb.net/kanbas-sp24-mon?retryWrites=true&w=majority&appName=Cluster0"
+);
 
 const app = express();
 app.use(
@@ -35,5 +41,9 @@ ModuleRoutes(app);
 SecurityController(app);
 UserRoutes(app);
 LikesRoutes(app);
+// ChatCompletionRoutes(app);
+// ImageGenerationRoutes(app);
+// VisionRoutes(app);
+ChatCompletionRoutes(app);
 
 app.listen(4000);
