@@ -37,8 +37,8 @@ app.use(
     cookie: {
       sameSite: "none",
       secure: true,
-      // domain: "kanbas-node-server-app-sp24-cs5610-02-l55v.onrender.com",
-      domain: ".onrender.com",
+      domain: "kanbas-node-server-app-sp24-cs5610-02-l55v.onrender.com",
+      // domain: ".onrender.com",
     },
   })
 );
